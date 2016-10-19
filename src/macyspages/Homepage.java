@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 				this.driver=driver;
 			}
 			public void searchItem(String itemName){
+				System.out.println("");
 				driver.findElement(By.id("globalSearchInputField")).sendKeys(itemName);
 				driver.findElement(By.id("subnavSearchSubmit")).click();
 				
